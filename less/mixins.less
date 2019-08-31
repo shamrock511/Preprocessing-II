@@ -1,1 +1,19 @@
 // Mixins in here
+.flex-class(@j-content: center; @f-direction: row) {
+	display: flex;
+	justify-content: @j-content;
+	align-items: center;
+	flex-direction: @f-direction;
+	flex-wrap: nowrap;
+}
+
+// Button
+.btn-class(@btn-height: 60px; @btn-width: 200px) {
+	 background-color: @button-bg;
+  .flex-class(@j-content: center; @f-direction: column);
+  height: @btn-height;
+  width: @btn-width;
+  color: white;
+  font-size: 2rem;
+  border-radius: 20px;
+}

@@ -1,0 +1,14 @@
+// Fade in
+
+.fade-in(@duration: 1s; @interval: 0.5s) {
+    animation: @duration fadein @interval forwards;
+     opacity: 0;
+     color: #fff;
+   
+   @keyframes fadein {
+     100% {
+       opacity: 1;
+       color: black;
+         }
+     }
+}
